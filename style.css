@@ -70,3 +70,89 @@ Header Area CSS
     box-shadow: none;
   }
 }
+
+/* 
+Footer Area CSS
+*/
+.footer-area {
+  position: relative;
+}
+.footer-top {
+  padding-top: 90px;
+  padding-bottom: 70px;
+}
+.footer-about img {
+  margin-bottom: 18px;
+}
+.footer-link h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #212121;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.footer-link ul {
+  margin: 0;
+  padding: 0;
+}
+.footer-link ul li {
+  list-style: none;
+}
+.footer-link ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #646464;
+  padding: 5px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.footer-link ul li a:hover {
+  color: #37806b;
+}
+.footer-link address {
+  font-weight: 600;
+  line-height: 2.2;
+}
+.social-link li {
+  display: inline-block;
+  margin-left: 5px;
+}
+.social-link li a {
+  background-color: #d5d5d5;
+  color: #fff !important;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.social-link li a:hover {
+  background-color: #37806b;
+}
+.footer-bottom {
+  border-top: 1px solid #c4c4c4;
+}
+.footer-bootom-text a {
+  text-decoration: none;
+  color: #37806b;
+}
+.design {
+  position: absolute;
+  top: -70px;
+  left: 0;
+}
+.design img {
+  height: 140px;
+}
+
+@media (max-width: 991px) {
+  .footer-link ul li:last-child {
+    margin-bottom: 30px;
+  }
+  .social-link li:last-child {
+    margin-bottom: 0 !important;
+  }
+}
