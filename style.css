@@ -23,6 +23,20 @@ h4 {
   font-weight: 500;
   font-size: 48px;
 }
+.theme-button {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #37806b;
+  color: #fff;
+  border-radius: 20px 0px;
+  padding: 10px 20px;
+  margin-top: 30px;
+  display: inline-block;
+  transition: 0.03s;
+}
+.theme-button:hover {
+  background-color: #caa892;
+}
 
 /* 
 Header Area CSS
@@ -48,6 +62,7 @@ Header Area CSS
   color: #fff;
   border-radius: 15px 0px;
   padding: 10px 20px;
+  text-transform: capitalize;
 }
 
 @media (max-width: 991px) {
@@ -68,6 +83,55 @@ Header Area CSS
   .header-area .navbar-toggler {
     border: none;
     box-shadow: none;
+  }
+}
+
+/* 
+Main Area CSS
+*/
+.hero-area {
+  padding: 80px 0;
+}
+.hero-text h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #646464;
+}
+.hero-text h2 {
+  font-weight: 600;
+  color: #212121;
+  font-size: 72px;
+}
+.hero-image img {
+  width: 100%;
+  border-radius: 140px 0px;
+}
+.design-image {
+  position: relative;
+  z-index: 1;
+}
+.design-image::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 2px solid #b0855b;
+  border-radius: 140px 0px;
+  left: 20px;
+  top: 20px;
+  z-index: -1;
+}
+
+@media (max-width: 991px) {
+  .hero-text h4 {
+    font-size: 18px;
+  }
+  .hero-text h2 {
+    font-size: 48px;
+  }
+  .hero-image {
+    margin-top: 50px;
   }
 }
 
