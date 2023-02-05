@@ -97,6 +97,83 @@
           </div>
         </div>
       </section>
+
+      <!-- Start Services Area -->
+      <section class="service-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="section-heading">
+                <h4>WHAT WE DO</h4>
+                <h3>Our Service</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="all-services owl-carousel">
+                <div class="single-services-area">
+                  <div class="single-service d-flex">
+                    <div class="service-image me-4">
+                      <img src="assets/img/s-one.png" alt="" />
+                    </div>
+                    <div class="service-text">
+                      <h4>Interior Design</h4>
+                      <p>
+                        Lorem ipsum dolor amet consectetur adipiscing elit sed
+                        eiusmod tempor incididunt ut labore.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-services-area">
+                  <div class="single-service d-flex">
+                    <div class="service-image me-4">
+                      <img src="assets/img/s-three.png" alt="" />
+                    </div>
+                    <div class="service-text">
+                      <h4>Architecture</h4>
+                      <p>
+                        Lorem ipsum dolor amet consectetur adipiscing elit sed
+                        eiusmod tempor incididunt ut labore.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-services-area">
+                  <div class="single-service d-flex">
+                    <div class="service-image me-4">
+                      <img src="assets/img/s-one.png" alt="" />
+                    </div>
+                    <div class="service-text">
+                      <h4>Planning</h4>
+                      <p>
+                        Lorem ipsum dolor amet consectetur adipiscing elit sed
+                        eiusmod tempor incididunt ut labore.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-services-area">
+                  <div class="single-service d-flex">
+                    <div class="service-image me-4">
+                      <img src="assets/img/s-three.png" alt="" />
+                    </div>
+                    <div class="service-text">
+                      <h4>Interior Design</h4>
+                      <p>
+                        Lorem ipsum dolor amet consectetur adipiscing elit sed
+                        eiusmod tempor incididunt ut labore.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Area -->
     </main>
     <!-- End Main Area -->
 
@@ -212,7 +289,24 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <script>
       $(document).ready(function () {
-        $(".owl-carousel").owlCarousel();
+        $(".all-services").owlCarousel({
+          loop: true,
+          margin: 2,
+          responsiveClass: true,
+          nav: true,
+          dots: false,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 3,
+            },
+          },
+        });
       });
     </script>
   </body>

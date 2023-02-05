@@ -38,6 +38,18 @@ h4 {
   background-color: #caa892;
 }
 
+.section-heading h4 {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #646464;
+}
+.section-heading h3 {
+  font-size: 48px;
+  color: #212121;
+  text-transform: capitalize;
+}
+
 /* 
 Header Area CSS
 */
@@ -132,6 +144,78 @@ Main Area CSS
   }
   .hero-image {
     margin-top: 50px;
+  }
+}
+
+/* 
+Service Area CSS
+*/
+.service-area {
+  padding: 100px 0;
+}
+.all-services {
+  margin-top: 60px;
+  position: relative;
+}
+.single-services-area {
+  padding: 15px;
+}
+.single-service {
+  background: #ffffff;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+  border-radius: 60px 0px;
+  padding: 40px 20px 40px 30px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.single-service:hover {
+  background-color: #caa892;
+  color: #fff;
+}
+.single-service:hover h4 {
+  color: #fff;
+}
+.service-image img {
+  width: 100%;
+}
+.service-text h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #212121;
+}
+.service-text p {
+  margin-bottom: 0;
+}
+.service-area .owl-nav {
+  position: absolute;
+  right: 0;
+  top: -80px;
+}
+.service-area .owl-nav span {
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  color: #646464;
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+.service-area .owl-nav span:hover {
+  background-color: #37806b;
+  color: #fff;
+}
+.service-area .owl-next {
+  margin-left: 15px;
+}
+
+@media (max-width: 991px) {
+  .service-area .section-heading h4 {
+    font-size: 18px;
+  }
+  .service-area .section-heading h3 {
+    font-size: 40px;
   }
 }
 
