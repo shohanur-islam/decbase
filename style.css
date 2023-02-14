@@ -50,6 +50,37 @@ h4 {
   text-transform: capitalize;
 }
 
+.design-image {
+  position: relative;
+  z-index: 1;
+}
+.design-image::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 2px solid #b0855b;
+  border-radius: 140px 0px;
+  left: 20px;
+  top: 20px;
+  z-index: -1;
+}
+.design-image-two {
+  position: relative;
+  z-index: 1;
+}
+.design-image-two::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 2px solid #b0855b;
+  border-radius: 140px 0px;
+  left: -20px;
+  top: -20px;
+  z-index: -1;
+}
+
 /* 
 Header Area CSS
 */
@@ -118,21 +149,6 @@ Main Area CSS
 .hero-image img {
   width: 100%;
   border-radius: 140px 0px;
-}
-.design-image {
-  position: relative;
-  z-index: 1;
-}
-.design-image::after {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
-  border: 2px solid #b0855b;
-  border-radius: 140px 0px;
-  left: 20px;
-  top: 20px;
-  z-index: -1;
 }
 
 @media (max-width: 991px) {
@@ -216,6 +232,23 @@ Service Area CSS
   }
   .service-area .section-heading h3 {
     font-size: 40px;
+  }
+}
+
+/* 
+About Area CSS
+*/
+.about-area {
+  padding: 100px 0;
+  position: relative;
+}
+.about-image img {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .about-image {
+    margin-bottom: 80px;
   }
 }
 
