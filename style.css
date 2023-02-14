@@ -250,6 +250,40 @@ About Area CSS
   .about-image {
     margin-bottom: 80px;
   }
+  .about-area .section-heading h4 {
+    font-size: 18px;
+  }
+  .about-area .section-heading h3 {
+    font-size: 40px;
+  }
+}
+
+/* 
+Success Area CSS
+*/
+.success-area {
+  padding: 100px 0;
+}
+.section-heading h5 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 288px;
+  background-image: url(assets/img/text-bg.png);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: cover;
+}
+.section-heading h3 {
+  font-size: 50px;
+}
+
+@media (max-width: 991px) {
+  .success-image {
+    margin-top: 80px;
+  }
+  .section-heading h3 {
+    font-size: 40px;
+  }
 }
 
 /* 
