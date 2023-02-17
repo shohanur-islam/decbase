@@ -168,6 +168,7 @@ Service Area CSS
 */
 .service-area {
   padding: 100px 0;
+  position: relative;
 }
 .all-services {
   margin-top: 60px;
@@ -263,8 +264,9 @@ Success Area CSS
 */
 .success-area {
   padding: 100px 0;
+  position: relative;
 }
-.section-heading h5 {
+.success-area .section-heading h5 {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 288px;
@@ -273,7 +275,7 @@ Success Area CSS
   color: transparent;
   background-size: cover;
 }
-.section-heading h3 {
+.success-area .section-heading h3 {
   font-size: 50px;
 }
 
@@ -281,8 +283,110 @@ Success Area CSS
   .success-image {
     margin-top: 80px;
   }
-  .section-heading h3 {
+  .success-area .section-heading h3 {
     font-size: 40px;
+  }
+}
+
+/* 
+Work Area CSS
+*/
+.work-area {
+  padding: 100px 0;
+}
+.work-text {
+  margin-bottom: 100px;
+}
+.single-work {
+  display: flex;
+  justify-content: center;
+}
+.single-work-text {
+  background: #ffffff;
+  box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 40px 0px;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+.single-work-text::after {
+  position: absolute;
+  content: "";
+  border-top: 2px solid #e0e0e0;
+  border-right: 2px solid #e0e0e0;
+  height: 100px;
+  width: 65px;
+  z-index: -1;
+  right: -65px;
+  top: 100px;
+}
+.single-work-text.special::after {
+  position: absolute;
+  content: "";
+  border-right: none;
+  height: 100px;
+  width: 65px;
+  z-index: -1;
+  left: -65px;
+  top: 100px;
+}
+.single-work-two .single-work-text.special::before {
+  position: absolute;
+  content: "";
+  border-top: 2px solid #e0e0e0;
+  height: 100px;
+  width: 65px;
+  z-index: -1;
+  right: -65px;
+  top: 100px;
+}
+.single-work-three .single-work-text::before {
+  position: absolute;
+  content: "";
+  border-top: 2px solid #e0e0e0;
+  border-left: 2px solid #e0e0e0;
+  height: 100px;
+  width: 65px;
+  z-index: -1;
+  left: -65px;
+  top: 100px;
+}
+.special {
+  margin-top: 100px;
+}
+.single-work h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #212121;
+}
+.single-work span {
+  font-weight: 700;
+}
+
+@media (max-width: 991px) {
+  .work-area .section-heading h3 {
+    font-size: 38px;
+  }
+  .single-work-text::after {
+    border: none;
+  }
+  .single-work-text.special::after {
+    border: none;
+  }
+  .single-work-two {
+    margin-bottom: 50px;
+  }
+  .single-work-two .single-work-text.special::before {
+    border: none;
+  }
+  .single-work-three .single-work-text::before {
+    border: none;
   }
 }
 
